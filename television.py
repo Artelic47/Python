@@ -75,7 +75,7 @@ class Television:
 
     def volume_up(self):
         """
-        Increases volume by one up to MAX_VOLUME. Unmutes tv if it was muted.
+        Increases volume by one up to MAX_VOLUME. Stop muting tv if it was muted.
         Only works if tv is on
 
         :param self: Refers to current status of class
@@ -89,7 +89,7 @@ class Television:
 
     def volume_down(self):
         """
-        Decreases volume by one down to MIN_VOLUME. Unmutes tv if it was muted.
+        Decreases volume by one down to MIN_VOLUME. Stop muting tv if it was muted.
         Only works when tv is on.
 
         :param self: Refers to current status of class
