@@ -51,7 +51,7 @@ def test_volume_up() -> None:
     tv.volume_up()
     assert "Volume = 2" in str(tv)
     tv.volume_up()
-    assert "Volume = 2" in str(tv) # max volume cap
+    assert "Volume = 2" in str(tv) # maximum volume cap
 
 def test_volume_down() -> None:
     tv = Television()
@@ -66,4 +66,4 @@ def test_volume_down() -> None:
     tv.volume_down()
     assert "Volume = 0" in str(tv)
     tv.volume_down()
-    assert "Volume = 0" in str(tv) # min volume cap
+    assert "Volume = 0" in str(tv) # minimum volume cap
